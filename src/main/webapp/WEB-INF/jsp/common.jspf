@@ -1,0 +1,3 @@
+<script>
+    var abPath = "${pageContext.request.contextPath}
+</script>

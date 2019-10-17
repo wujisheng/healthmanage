@@ -2,6 +2,7 @@ package com.health.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,10 +21,10 @@ public class SignInController {
     }*/
 
 
-    @RequestMapping("/signin")
-    public String SignIn(String name,String password){
+    @RequestMapping("/login")
+    public String SignIn(String inputEmail,String inputPassword){
 
-        if (name == "wjs" && password == "123456"){
+        if (inputEmail.equals("wjs@12") && inputPassword.equals("123456")){
             return "success";
         }else {
             return "signin";
@@ -32,11 +33,6 @@ public class SignInController {
 
     @RequestMapping("/")
     public String index(){
-        return "success";
-    }
-
-    @RequestMapping("/test")
-    public String test(){
         return "signin";
     }
 
