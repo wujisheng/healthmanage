@@ -11,9 +11,9 @@
          http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <mvc:annotation-driven/>
-    <mvc:resources location="/resources/img" mapping="/resources/img/**"/>
-    <mvc:resources location="/resources/js/" mapping="/resources/js/**"/>
-    <mvc:resources location="/resources/css/" mapping="/resources/css/**"/>
+    <!--<mvc:resources location="/resources/img" mapping="/img/**"/>-->
+    <mvc:resources location="/resources/js/" mapping="/js/**"/>
+    <mvc:resources location="/resources/css/" mapping="/css/**"/>
 
     <mvc:default-servlet-handler/>
 

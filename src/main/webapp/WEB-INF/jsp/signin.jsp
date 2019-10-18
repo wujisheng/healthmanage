@@ -6,7 +6,7 @@
     <%@include file="common.jspf"%>
 
     <!-- Bootstrap core CSS -->
-    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${ctx}/css/bootstrap.min.css" rel="stylesheet">
 
 
     <style>
@@ -26,7 +26,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="${pageContext.request.contextPath}/resources/css/signin.css" rel="stylesheet">
+    <link href="${ctx}/css/signin.css" rel="stylesheet">
 </head>
 <body class="text-center">
 <form class="form-signin" action="${pageContext.request.contextPath}/login" method="post">
@@ -44,8 +44,8 @@
     <button id="signin" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
 </form>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common/bootstrap.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/signin/signin.js"></script>
+<script type="text/javascript" src="${ctx}/js/common/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="${ctx}/js/common/bootstrap.min.js"></script>
+<script type="text/javascript" src="${ctx}/js/signin/signin.js"></script>
 </body>
 </html>
